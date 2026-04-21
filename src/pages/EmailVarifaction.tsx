@@ -19,7 +19,7 @@ useEffect(()=>{
       console.error('Email verification failed:', error);
       setSuccess(false);
     } finally {
-      setLoading(false);
+      setLoading(false); 
     }
   };
 
