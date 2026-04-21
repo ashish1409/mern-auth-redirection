@@ -12,7 +12,7 @@ const EmailVerification = () => {
 useEffect(()=>{
   const handleEmailVerification = async () => {
     try {
-      const response = await axios.post('https://mern-auth-redirection-eight.vercel.app/api/auth/verify-email', { tokenId });
+      const response = await axios.post('http://localhost:5000/api/auth/verify-email', { tokenId });
       console.log(response.data);
       setSuccess(true);
     } catch (error) {
